@@ -66,8 +66,8 @@
 
         <label for="Medio"> Medio de contacto preferido: </label>
         <select id="Medio" required>
-          <option value="Instructor">Instructor</option>
-          <option value="Aprendiz" selected>Aprendiz</option>
+          <option value="Telefono">Telefono</option>
+          <option value="correo escrito" selected>Correo escrito</option>
           <option value="Otros">Otros</option>
         </select><br><br>
 
@@ -82,7 +82,8 @@
         <br><br>
 
         <label for="Asunto">Asunto: </label>
-        <input id="Asunto" type="text" placeholder="Escribe aquí" class="required" required><br><br>
+        <input id="Asunto" type="text" placeholder="Escribe aquí" class="required" minlength="5" maxlength="50"
+          required><br><br>
 
         <label for="mensaje">Descripción: </label>
         <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje" required></textarea><br>
